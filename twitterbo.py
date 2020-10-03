@@ -31,7 +31,7 @@ def menu():
     print("\t 8. Exit............... \n")
     me = int(input())
     if (me == 1):
-        retrieve()
+        retrieve(----------)
 		
 	elif(me==2):
        followqers()
@@ -47,7 +47,7 @@ def menu():
         mess()
     else :
         exit()
-def retrieve():
+def retrieve(-----------):
     user=input("Enter any Hash Tag or Search:-")
     tweets = api.search(user, lang='en', count=10, tweet_mode="extended")
 
@@ -64,11 +64,11 @@ def followers():
     for target in targets:
         user = api.get_user(target)
         print(user.name, user.followers_count)
-def loc():
+def loc():#location
 
 
 
-    user_id=input("Enter api id to see location:-")
+    userr_id=input("Enter api id to see location:-")
     user=api.get_user(user_id)
     print("location of user:-",user.location)
     print("Time Zone :-",user.time_zone)
