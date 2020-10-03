@@ -28,7 +28,7 @@ def menu():
     print("\t5.Compare tweets \n")
     print("\t6. Analyze top usage \n")
     print("\t7. Tweet a message \n")
-    print("\t 8. Exit \n")
+    print("\t 8. Exit............... \n")
     me = int(input())
     if (me == 1):
         retrieve()
@@ -52,11 +52,11 @@ def retrieve():
     tweets = api.search(user, lang='en', count=10, tweet_mode="extended")
 
     for  tweet in tweets:
-        print("-----------------------")
+        print("--------------------------------------------")
         print(tweet.full_text)
-    print("-----------------------")
+    print("---------------------------------------------")
 def followers():
-    us=input("Enter Any twitter id for Serch Number of follower:-")
+    us=input("Enter Any twitter id for Serch Number of follower:----------")
     targets = [us]  # All your targets her
 
 
